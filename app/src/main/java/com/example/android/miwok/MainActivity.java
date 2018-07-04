@@ -30,41 +30,38 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        TextView numbers= (TextView) findViewById(R.id.numbers);
-        TextView family= (TextView) findViewById(R.id.family);
-        final TextView phrases= (TextView) findViewById(R.id.phrases);
-        TextView colors= (TextView) findViewById(R.id.colors);
+        TextView numbers = (TextView) findViewById(R.id.numbers);
+        TextView family = (TextView) findViewById(R.id.family);
+        final TextView phrases = (TextView) findViewById(R.id.phrases);
+        TextView colors = (TextView) findViewById(R.id.colors);
 
 
-        numbers.setOnClickListener(new View.OnClickListener()
-        {
+        numbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(v.getContext(),NumbersActivity.class);
+                Intent i = new Intent(v.getContext(), NumbersActivity.class);
                 startActivity(i);
             }
         });
 
-        family.setOnClickListener(new View.OnClickListener(){
+        family.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(),FamilyActivity.class));
+                startActivity(new Intent(v.getContext(), FamilyActivity.class));
             }
         });
 
-        phrases.setOnClickListener(new View.OnClickListener()
-        {
+        phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(),PhrasesActivity.class));
+                startActivity(new Intent(v.getContext(), PhrasesActivity.class));
             }
         });
 
-        colors.setOnClickListener(new View.OnClickListener()
-        {
+        colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(),ColorsActivity.class));
+                startActivity(new Intent(v.getContext(), ColorsActivity.class));
             }
         });
 

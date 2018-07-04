@@ -37,20 +37,20 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         // create a list of words here
-        ArrayList<Word> words= new ArrayList<Word>();
-        words.add(new Word("one","ek"));
-        words.add(new Word("two","do"));
-        words.add(new Word("three","teen"));
-        words.add(new Word("four","char"));
-        words.add(new Word("five","panch"));
-        words.add(new Word("six","chah"));
-        words.add(new Word("seven","saat"));
-        words.add(new Word("eight","aath"));
-        words.add(new Word("nine","no"));
-        words.add(new Word("ten","dus"));
+        ArrayList<Word> words = new ArrayList<Word>();
+        words.add(new Word("one", "ek"));
+        words.add(new Word("two", "do"));
+        words.add(new Word("three", "teen"));
+        words.add(new Word("four", "char"));
+        words.add(new Word("five", "panch"));
+        words.add(new Word("six", "chah"));
+        words.add(new Word("seven", "saat"));
+        words.add(new Word("eight", "aath"));
+        words.add(new Word("nine", "no"));
+        words.add(new Word("ten", "dus"));
 
-        ListView listView= (ListView) findViewById(R.id.listView);
-        WordAdapter wordAdapter= new WordAdapter(this,words);
+        ListView listView = (ListView) findViewById(R.id.listView);
+        WordAdapter wordAdapter = new WordAdapter(this, words, R.color.category_numbers);
         listView.setAdapter(wordAdapter);
     }
 }
